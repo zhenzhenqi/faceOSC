@@ -6,7 +6,7 @@ Instructions
 
 2. Install Syphon library in Processing.
 
-3.open the processing sketch. run it, you should be able to see a face with a bunch of points on it.
+3. open the processing sketch. run it, you should be able to see a face with a bunch of points on it.
 
 4. each point has a id number.
 
