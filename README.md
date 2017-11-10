@@ -2,7 +2,7 @@
 Instructions
 --------
 
-1, open FaceOSC, and turn on `raw` and `syphon`, turn off `pose` and `gesture`. Then you can press ‘m’ to toggle the face mesh, and press ‘g’ to toggle the GUI.
+1. open FaceOSC, and turn on `raw` and `syphon`, turn off `pose` and `gesture`. Then you can press ‘m’ to toggle the face mesh, and press ‘g’ to toggle the GUI.
 
 2. Install Syphon library in Processing.
 
