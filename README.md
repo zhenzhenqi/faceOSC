@@ -1,33 +1,30 @@
 
-Settings
+Instructions
 --------
 
-The settings for FaceOSC are are found in the settings.xml file located at: 
-* Mac OSX: right click on FaceOSC.app, select "Show Package Contents", and navigate to Contents/Resources/data/ 
-* Win & Linux: included in the FaceOSC folder
+1, open FaceOSC, and turn on `raw` and `syphon`, turn off `pose` and `gesture`. Then you can press ‘m’ to toggle the face mesh, and press ‘g’ to toggle the GUI.
 
-Further instructions are contained within the settings.xml file.
+2. Install Syphon library in Processing.
 
-Playing Movies
---------------
+3.open the processing sketch. run it, you should be able to see a face with a bunch of points on it.
 
-Put the movie file in your home folder and set it in the movie <filename> tag with the full path to the movie aka:
+4. each point has a id number.
 
-/Users/YourUserAccountName/yourMovie.mov
+5. there is a `ArrayList` called `points`,   use `points.get(id)` to get the `PVector` which is the point’s position.
 
-Change the source <useCamera> tag to 0 to use the movie as input. Also check the other movie settings (volume, speed).
 
-Key Controls
+
+OSC Key Controls
 -------------
 
 * r - reset the face tracker
 * m - toggle face mesh drawing
 * g - toggle gui's visibility
-* p - pause/unpause (only works with movie source) 
+* p - pause/unpause (only works with movie source)
 * up/down - increase/decrease movie playback speed (only works with movie source)
 
 
-Osc Information
+OSC Information
 ---------------
 
  * Pose
@@ -45,4 +42,3 @@ Osc Information
   * **nostril flate**: /gesture/nostrils
  * Raw
   * **raw points** (66 xy-pairs): /raw
-
